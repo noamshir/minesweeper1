@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+.level {
+  display: inline-block;
+  margin: auto;
+  margin-top: 5px;
+  width: 420px;
+  color: rgb(240, 5, 5);
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  border: 3px snow solid;
+  border-radius: 10px;
+}
+
+.level p {
+  margin-bottom: auto;
+  margin-top: 0px;
+}
+
+.safeClick {
+  background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+}
+.level button {
+  font-size: 20px;
+  text-align: center;
+  width: 40px;
+  background-color: steelblue;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.help p {
+  display: inline-block;
+  color: azure;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 40px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  border-radius: 10px;
+}
+
+.hints:hover {
+  cursor: pointer;
+}
+.radio-bt-set{
+  display: inline-block;
+}
+.minesSet {
+  margin: auto;
+  margin-top: -10px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  margin-top: 2px;
+  border: 3px snow solid;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 420px;
+  color: red;
+  
+}
+.minesSet p{
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+table {
+  margin: auto;
+  border: 5px rgb(255, 0, 64) solid;
+}
+
+td {
+  cursor: pointer;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  height: 30px;
+  width: 30px;
+  border: 1px rgb(0, 0, 0) solid;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.screen
+{
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+ width:fit-content;
+  margin: auto;
+  border: azure 3px solid;
+  border-radius: 10px;
+}
+
+.stopper {
+  margin: auto;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  width: 420px;
+  height: 50px;
+  padding: 10px;
+  border: 3px snow solid;
+  text-align: center;
+  margin-top: 3px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.stopper h2 {
+  margin: auto;
+  color: red;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.stats {
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  width: 400px;
+  border: 1px whitesmoke solid;
+  border-radius: 40px;
+}
+
+.stats button {
+  font-size: 20px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  margin-left: 5px;
+  border-radius: 10px;
+  border: 1px snow solid;
+}
+
+.bestScoreh2 {
+  display: inline-block;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="initGame()">
+    <div class="level">
+        <p>Choose difficulty:</p>
+        <button class="smiley" onclick="resetGame()">😃</button>
+        <form class="radio-bt">
+          <input onclick="sizeSet(this)" checked="checked" type="radio" id="easy" name="difficulty" value="Easy(4x4)" />
+          <label for="easy">Easy(4x4)</label>
+
+          <input
+          onclick="sizeSet(this)"
+            type="radio"
+            id="medium"
+            name="difficulty"
+            value="Medium(8x8)"
+          />
+          <label for="medium">medium(8x8)</label>
+
+          <input onclick="sizeSet(this)" type="radio" id="hard" name="difficulty" value="Hard(12x12)" />
+          <label for="hard">Hard(12x12)</label>
+        </form>
+      </div>
+      <div class="minesSet">
+        <p>Set Mines:</p>
+        <form class="radio-bt-set">
+          <input onclick="isManuel(false)" checked="checked" type="radio" id="offSetMines" name="mines"/>
+          <label for="offSetMines">OFF</label>
+          <input onclick="isManuel(true)" type="radio" id="onSetMines" name="mines" />
+          <label for="onSetMines">ON</label>
+          </form>
+          <h2></h2>
+      </div>
+      <div class="stopper">
+        <h2>00:00:00</h2>
+    </div>
+      <div class="screen">
+      <div class="help">
+          <p>lives: <span class="lives">❤️❤️❤️</span></p>
+          <p>hints: <span onclick="useHint()" class="hints">💡💡💡</span></p>
+      </div>
+    <table class="game-board">
+      <tbody class="board-cells" id="RightClickCell"></tbody>
+    </table>
+    <div class="stats">
+      <h2 class="bestScoreh2">Best Score <span class="bScore">(Easy):0sec</span></h2>
+      <button  onclick="safeClicked()">Safe Click <span class="spanSafeClick">(3)</span></button>
+    </div>
+   </div>
+<script src="js/game.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>
